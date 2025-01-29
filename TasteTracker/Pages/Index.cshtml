@@ -4,7 +4,45 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="vh-100 bg-food-pattern">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5 text-center">
+                <div class="card bg-light shadow-lg border-radius-10" style="background-color: #f8f9fa;">
+                    <div class="card-body p-5">
+                        <!-- Header Section -->
+                        <h1 class="fw-bold mb-4" style="color: #e67e22;">Welcome to Taste Tracker!</h1>
+                        <p class="lead mb-4">Explore a world of delicious recipes and share your own culinary creations.</p>
+
+                        <!-- Image Section -->
+                        <img src="/images/uploaded-food-image.png" alt="Delicious food" class="img-fluid rounded mb-4 shadow" style="max-height: 350px; object-fit: cover;" />
+
+                        <!-- Buttons Section -->
+                        <div class="d-flex justify-content-center">
+                            <a href="/Recipes/Index" class="btn btn-success btn-lg me-3">Browse Recipes</a>
+                            <a href="/Recipes/Create" class="btn btn-primary btn-lg">Create Recipe</a>
+                        </div>
+
+                        <!-- Footer Section -->
+                        <div class="mt-5">
+                            <p class="text-muted">Taste Tracker | Your go-to place for delicious recipes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Background Pattern -->
+<style>
+    .bg-food-pattern {
+        background-image: url('/images/background-pattern.jpg'); /* Replace this with your uploaded background image if applicable */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .border-radius-10 {
+        border-radius: 10px;
+    }
+</style>
